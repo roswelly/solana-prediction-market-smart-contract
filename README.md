@@ -2,13 +2,23 @@
 
 A decentralized prediction market built on **Solana** using the **Anchor framework**. Users can create markets, place bets on Yes/No outcomes, resolve markets, and claim winnings proportionally minus a 1% platform fee.
 
-## 🚀 Features
+## Transasction
+- Initialize Market
+   Transaction: [JFNNLiHVZTJJbCXZvdpUADnvzqKRXRpdnd6uKktn4ArNdo9iMwyxKbRBFe5LifGxY19ahLPmskLqTPCyZTAnGAE]( https://solscan.io/tx/JFNNLiHVZTJJbCXZvdpUADnvzqKRXRpdnd6uKktn4ArNdo9iMwyxKbRBFe5LifGxY19ahLPmskLqTPCyZTAnGAE?cluster=devnet)
+  
+- Place Bet on Yes
+   Transaction: [58RUoGYvdUP7mWzwbEQoM4ghu14LqpXVaGiesB2RLJxhdTxGsaxNaoaVRqYgPGY3CvScpeyUhmWWMYJLvuR6uY8Z](https://solscan.io/tx/58RUoGYvdUP7mWzwbEQoM4ghu14LqpXVaGiesB2RLJxhdTxGsaxNaoaVRqYgPGY3CvScpeyUhmWWMYJLvuR6uY8Z?cluster=devnet)
+   
+- Place Bet on No
+   Transaction: [4kmgr28sduuFnYVE19TRb2U9WFsDzNwuduh9QBDfXF2PxE3Yi3J2daPR34FthyukcYQXckhfBkn83r255EaFxuZX](https://solscan.io/tx/4kmgr28sduuFnYVE19TRb2U9WFsDzNwuduh9QBDfXF2PxE3Yi3J2daPR34FthyukcYQXckhfBkn83r255EaFxuZX?cluster=devnet)
+   
+## Features
 
-- ✅ **Create Markets**: Initialize prediction markets with custom questions and end times
-- ✅ **Place Bets**: Bet native SOL on Yes or No outcomes before the betting period ends
-- ✅ **Resolve Markets**: Authorized resolution authority sets the true outcome
-- ✅ **Claim Winnings**: Winners automatically receive proportional payouts based on their bet size
-- ✅ **Security Features**:
+- **Create Markets**: Initialize prediction markets with custom questions and end times
+- **Place Bets**: Bet native SOL on Yes or No outcomes before the betting period ends
+- **Resolve Markets**: Authorized resolution authority sets the true outcome
+- **Claim Winnings**: Winners automatically receive proportional payouts based on their bet size
+- **Security Features**:
   - Time validation (can't bet after end time, can't resolve before end time)
   - Authorization checks (only resolution authority can resolve)
   - Zero-amount bet prevention
@@ -16,7 +26,7 @@ A decentralized prediction market built on **Solana** using the **Anchor framewo
   - Double-claim protection
   - Math overflow protection
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
@@ -298,11 +308,11 @@ await program.methods
 ## 🧪 Test Coverage
 
 The test suite covers:
-- ✅ Market initialization
-- ✅ Placing bets on both sides
-- ✅ Market resolution
-- ✅ Claiming winnings
-- ✅ Error cases:
+-  Market initialization
+-  Placing bets on both sides
+-  Market resolution
+-  Claiming winnings
+-  Error cases:
   - Betting after end time
   - Unauthorized resolution
   - Claiming without winning
@@ -314,14 +324,6 @@ The test suite covers:
 
 ISC
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-For issues and questions, please open an issue on GitHub.
-
 ## 🔗 Links
 
 - [Solana Documentation](https://docs.solana.com/)
@@ -330,4 +332,4 @@ For issues and questions, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ using Solana and Anchor**
+
