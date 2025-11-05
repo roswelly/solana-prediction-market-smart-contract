@@ -1,0 +1,2 @@
+A decentralized prediction market smart contract on Solana built with Anchor. Create markets, place bets on Yes/No outcomes, resolve markets, and claim proportional winnings. Features include time validation, authorization checks, and automatic fee distribution (1% platform fee).
+
