@@ -54,7 +54,7 @@ Anchor uses constraints to validate accounts:
 - `seeds`: PDA derivation seeds
 - `bump`: PDA bump seed (stored for later use)
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Rust** (latest stable version)
 - **Solana CLI** (v1.18+)
@@ -62,7 +62,7 @@ Anchor uses constraints to validate accounts:
 - **Node.js** (v18+) and **Yarn**
 - **TypeScript** (for tests)
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -87,7 +87,7 @@ Anchor uses constraints to validate accounts:
    anchor build
    ```
 
-## 🧪 Testing
+## Testing
 
 ### Local Testing
 
@@ -116,9 +116,7 @@ anchor deploy --provider.cluster devnet
 yarn test:devnet
 ```
 
-See [DEPLOY_DEVNET.md](./DEPLOY_DEVNET.md) for detailed devnet deployment instructions.
-
-## 📊 How It Works
+## How It Works
 
 ### 1. Initialize Market
 Creator sets:
@@ -146,7 +144,7 @@ Winners can claim their proportional share:
   - Pool after fee: 297 SOL
   - If Yes wins and user bet 50 SOL: `(50 / 100) × 297 = 148.5 SOL`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 prediction-market/
@@ -163,7 +161,7 @@ prediction-market/
 └── README.md                    # This file
 ```
 
-## 🔒 Security Features
+## Security Features
 
 1. **Time Validation**
    - End time must be in future when creating market
@@ -188,7 +186,7 @@ prediction-market/
    - Prevents claiming before market resolution
    - Validates bettor matches bet account
 
-## 📝 Account Structures
+## Account Structures
 
 ### Market Account
 ```rust
@@ -222,7 +220,7 @@ pub struct Bet {
 
 **Size**: ~83 bytes
 
-## 🚢 Deployment
+## Deployment
 
 ### Local Deployment
 ```bash
@@ -236,14 +234,12 @@ anchor build
 anchor deploy --provider.cluster devnet
 ```
 
-See [DEPLOY_DEVNET.md](./DEPLOY_DEVNET.md) for complete instructions.
-
-## 📚 Program ID
+## Program ID
 
 - **Localnet**: `3LHuBziG2Tp1UrxgoTAZDDbvDK46quk6T99kHkgt8UQg`
 - **Devnet**: `3LHuBziG2Tp1UrxgoTAZDDbvDK46quk6T99kHkgt8UQg`
 
-## 🧩 Usage Examples
+## Usage Examples
 
 ### Initialize a Market
 ```typescript
@@ -305,7 +301,7 @@ await program.methods
   .rpc();
 ```
 
-## 🧪 Test Coverage
+## Test Coverage
 
 The test suite covers:
 -  Market initialization
@@ -320,11 +316,11 @@ The test suite covers:
   - Claiming before resolution
   - Double claiming
 
-## 📄 License
+## License
 
 ISC
 
-## 🔗 Links
+## Links
 
 - [Solana Documentation](https://docs.solana.com/)
 - [Anchor Documentation](https://www.anchor-lang.com/)
