@@ -1,6 +1,6 @@
-# Prediction Market Smart Contract
+# Solana Prediction Market Smart Contract
 
-A decentralized prediction market built on **Solana** using the **Anchor framework**. Users can create markets, place bets on Yes/No outcomes, resolve markets, and claim winnings proportionally minus a 1% platform fee.
+**Prediction Market** built on **Solana** using the **Anchor framework**. Users can create markets, place bets on Yes/No outcomes, resolve markets, and claim winnings proportionally minus a 1% platform fee.
 
 ## Transasction
 - Initialize Market
