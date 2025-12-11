@@ -3,7 +3,7 @@
 **Prediction Market** built on **Solana** using the **Anchor framework**. Users can create markets, place bets on Yes/No outcomes, resolve markets, and claim winnings proportionally minus a 1% platform fee.
 
 ## Contact
--[@roswellecho](https://t.me/roswellecho)
+-Telegram: [@roswellecho](https://t.me/roswellecho)
 
 ## Transasction
 - Initialize Market
